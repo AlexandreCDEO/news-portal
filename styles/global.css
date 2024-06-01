@@ -8,8 +8,10 @@
     --text-color-secondary: #CBD5E1;
 
     --font-family: 'Archivo', sans-serif;
+    --font-family-archivo-black: 'Archivo black', sans-serif;
     --h1: 800 24px/1.35 var(--font-family);
     --h2: 800 16px/1.4 var(--font-family);
+    --h2-archivo-black: 400 14px/1.4 var(--font-family-archivo-black);
     --h3: 800 14px/1.4 var(--font-family);
     --text-span: 600 14px/1.45 var(--font-family);
     --text: 400 16px/1.4 var(--font-family);
@@ -52,8 +54,16 @@ img {
 }
 
 main {
-    margin-top: 40px;
-    gap: 80px;
+    margin-block: 40px;
+    row-gap: 80px;
+    column-gap: 32px;
+
+    grid-template-columns: 2fr 1.42fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 .content-tag {

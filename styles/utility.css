@@ -26,6 +26,10 @@
     font: var(--h2);
 }
 
+.text-xl-archivo-black {
+    font: var(--h2-archivo-black);
+}
+
 .text-lg {
     font: var(--h3);
 }
@@ -33,4 +37,6 @@
 .text-sm {
     font: var(--text-sm);
 }
+
+
 
